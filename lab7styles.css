@@ -1,5 +1,5 @@
 body {
-    background-image: url('Images/AppleCore.jpg');
+    background-image: url('images/AppleCore.jpg');
     background-color: darkolivegreen;
     background-attachment: fixed;
    	background-position: center;
@@ -31,7 +31,7 @@ p {
 
 .boxed ul {
   list-style-position:inside;
-  list-style-image: url('Images/leaf.png'); 
+  list-style-image: url('images/leaf.png'); 
   padding-left: 0;              
   text-align: center;
 }
@@ -93,7 +93,7 @@ a:hover {
 .border-image {
   border: 20px solid transparent; 
   padding: 15px;                 
-  border-image: url('Images/vineborder.png') 100 round; 
+  border-image: url('images/vineborder.png') 100 round; 
   border-radius: 10px;
   width: 60%;
   margin: 20px auto;
@@ -131,4 +131,5 @@ a:hover {
   color: black;
   background-color: burlywood;
   text-align: center;
+
 }
