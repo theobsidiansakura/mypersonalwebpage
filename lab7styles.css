@@ -61,7 +61,7 @@ img {
   position: absolute;
   top: 50;
   left: 50;
-  transform: translate(-50, -50);
+  transform: (-50, -50);
   color: white;
   font-size: 22;
   font-weight: bold;
@@ -120,7 +120,7 @@ a:hover {
   background-color: olive;
 }
 
-@font-face {
+font-face {
   font-family: Lab7Font;       
   src: url('AppleGaramond.ttf');
 }
