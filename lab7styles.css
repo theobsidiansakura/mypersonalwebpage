@@ -30,7 +30,7 @@ p {
 }
 
 .boxed ul {
-  list-style-position:inside;
+  list-style-position: inside;
   list-style-image: url('leaf.png'); 
   padding-left: 0;              
   text-align: center;
@@ -133,4 +133,5 @@ font-face {
   text-align: center;
 
 }
+
 
