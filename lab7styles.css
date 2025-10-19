@@ -120,18 +120,5 @@ a:hover {
   background-color: olive;
 }
 
-font-face {
-  font-family: lab7Font;       
-  src: url('AppleGaramond.ttf');
-}
-
-.linked-font {
-  font-family: lab7font, Tahoma;
-  font-size: 25;
-  color: white;
-  background-color: burlywood;
-  text-align: center;
-
-}
 
 
