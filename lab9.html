@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Lab 9</title>
+<style>
+  body {
+    background: linear-gradient(to bottom right, #d6f5f5, #f9f9f9);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #003333;
+  }
+
+  h1 {
+    margin-top: 20px;
+  }
+
+  img {
+    border: 4px solid teal;
+    margin: 20px 0;
+    width: 800px; 
+    height: auto;
+  }
+
+  a {
+    color: teal;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>Image Mapping</h1>
+<h5> note: i did not add visual shapes on the map because github keeps breaking my uploaded images.</h5>
+
+<!-- image with mapped areas -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+     alt="Map" usemap="#shapemap">
+
+<map name="shapemap">
+  <!-- Rectangles -->
+  <area shape="rect" coords="50,50,250,200" href="https://www.nasa.gov" alt="NASA">
+  <area shape="rect" coords="550,100,750,250" href="https://www.nationalgeographic.com" alt="National Geographic">
+
+  <!-- Circles -->
+  <area shape="circle" coords="400,300,60" href="https://www.youtube.com" alt="YouTube">
+  <area shape="circle" coords="200,400,50" href="https://www.spotify.com" alt="Spotify">
+
+  <!-- Polygons -->
+  <area shape="poly" coords="500,400,580,420,550,480,480,460" href="https://www.wikipedia.org" alt="Wikipedia">
+  <area shape="poly" coords="650,350,700,370,720,430,660,440" href="https://www.pinterest.com/" alt="Pinterest">
+</map>
+
+<!-- text links backups -->
+<h3>Direct Links</h3>
+<p>
+  <a href="https://www.nasa.gov" target="_blank">NASA</a> |
+  <a href="https://www.nationalgeographic.com" target="_blank">National Geographic</a> |
+  <a href="https://www.youtube.com" target="_blank">YouTube</a> |
+  <a href="https://www.spotify.com" target="_blank">Spotify</a> |
+  <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a> |
+  <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>
+</p>
+
+</body>
+</html>
