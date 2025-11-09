@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tables; lab 8</title>
+<style>
+    /* --- table 1 styles --- */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 40px;
+  }
+
+  table {
+    border: 4px solid teal;
+    border-collapse: separate;
+    border-spacing: 8px;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid gray;
+    font-size: 14px;
+  }
+
+  /* --- table 1 colors --- */
+  .red { background-color: #ffcccc; }
+  .green { background-color: #ccffcc; }
+  .blue { background-color: #ccccff; }
+  .yellow { background-color: #fff7cc; }
+  .orange { background-color: #ffd9b3; }
+  .purple { background-color: #e6ccff; }
+
+
+    /* --- table 2 styles --- */
+.table2 {
+    border: 5px solid navy;
+    border-collapse: separate;
+    border-spacing: 20px;
+    width: 80%;
+  }
+
+.table2 td {
+    border: 2px solid #333;
+    padding: 20px; 
+    text-align: center;
+    background-color: #eef5ff;
+  }
+
+.table2 img {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+
+.table2 img:hover {
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+<h2>Table 1: Chaotic Rainbow Table</h2>
+
+<table>
+  <tr>
+    <td class="green" colspan="2"><strong>Monday</strong> / <strong>Tuesday</strong></td>
+    <td class="blue"><strong>Wednesday</strong></td>
+    <td class="yellow"><strong>Thursday</strong></td>
+    <td class="red"><strong>Friday</strong></td>
+  </tr>
+
+  <tr>
+    <td class="orange" rowspan="2"><strong>8:00–9:00 AM</strong></td>
+    <td class="red"><strong>9:00–10:00 AM</strong></td>
+    <td class="purple" colspan="2"><strong>10:00–11:00 AM</strong></td>
+    <td class="yellow"><strong>11:00–12:00 PM</strong></td>
+  </tr>
+
+  <tr>
+    <td class="blue">Art</td>
+    <td class="yellow">English</td>
+    <td class="orange">History</td>
+    <td class="purple">Music</td>
+  </tr>
+
+  <tr>
+    <td class="purple">Math</td>
+    <td class="green">Physical Ed.</td>
+    <td class="blue">Reading</td>
+    <td class="yellow">Computer Lab</td>
+    <td class="orange">Science</td>
+  </tr>
+
+  <tr>
+    <td class="red">Science</td>
+    <td class="red">Math</td>
+    <td class="green">Art</td>
+    <td class="blue">Group Project</td>
+    <td class="yellow">Yoga</td>
+  </tr>
+
+  <tr>
+    <td class="green" colspan="2">Morning Assembly</td>
+    <td class="orange" rowspan="2">Lunch / Recess</td>
+    <td class="purple">Reading</td>
+    <td class="red">Science</td>
+
+  </tr>
+</table>
+
+
+<h2>Table 2: Image Links Table</h2>
+
+<table class="table2">
+  <tr>
+    <td>
+      <a href="https://www.nasa.gov" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo">
+      </a>
+      <p>Visit NASA</p>
+    </td>
+    <td>
+      <a href="https://www.earthboundtrading.com" target="_blank">
+        <img src="https://cdn.brandfetch.io/idmlLeOTTc/w/320/h/320/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1759762612833" alt="Earthbound Trading Co Logo">
+      </a>
+      <p>Shop Boho</p>
+    </td>
+    <td>
+      <a href="https://openai.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI Logo">
+      </a>
+      <p>Discover AI</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.wikipedia.org" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia Logo">
+      </a>
+      <p>Learn More</p>
+    </td>
+    <td>
+      <a href="https://www.youtube.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo">
+      </a>
+      <p>Watch Videos</p>
+    </td>
+    <td>
+      <a href="https://www.spotify.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify Logo">
+      </a>
+      <p>Listen to Music</p>
+    </td>
+  </tr>
+</table>
+
+
+</body>
+</html>
