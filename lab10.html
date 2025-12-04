@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Custom Questionnaire</title>
+<style>
+  body {
+    background: linear-gradient(135deg, #d9e4f5, #f7f0ff);
+    font-family: Arial, sans-serif;
+    padding: 40px;
+  }
+  .container {
+    background: white;
+    padding: 30px;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+  h1 {
+    text-align: center;
+    color: #4b3b78;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+  }
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+  }
+  .radio-group, .checkbox-group {
+    margin-top: 10px;
+  }
+  .radio-group label,
+  .checkbox-group label {
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background: #4b3b78;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  button:hover {
+    background: #362a58;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Custom Questionnaire</h1>
+    <form enctype="text/plain">
+
+      <label for="name">1. What is your name?</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="email">2. What is your email?</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="tel">3. Your phone number:</label>
+      <input type="tel" id="tel" name="tel" />
+
+      <label for="favcolor">4. Choose your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" />
+
+      <label for="birth">5. Select your birth date:</label>
+      <input type="date" id="birth" name="birth" />
+
+      <label for="website">6. Your website (if any):</label>
+      <input type="url" id="website" name="website" />
+
+      <label>7. Choose your preferred music style:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="music" value="ambient" /> Ambient</label>
+        <label><input type="radio" name="music" value="pop" /> Pop</label>
+        <label><input type="radio" name="music" value="metal" /> Metal</label>
+      </div>
+
+      <label>8. Which instruments do you play? (Check all that apply)</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="instrument" value="ukulele" /> Ukulele</label>
+        <label><input type="checkbox" name="instrument" value="guitar" /> Guitar</label>
+        <label><input type="checkbox" name="instrument" value="piano" /> Piano</label>
+      </div>
+
+      <label for="select">9. Choose your creative focus:</label>
+      <select id="select" name="focus">
+        <option value="music">Music</option>
+        <option value="art">Art</option>
+        <option value="writing">Writing</option>
+        <option value="spirituality">Spirituality</option>
+      </select>
+
+      <label for="textarea">10. Tell us what inspires you the most:</label>
+      <textarea id="textarea" name="inspiration" rows="4"></textarea>
+
+      <button type="submit">SEND</button>
+      <button type="reset">RESET</button>
+
+    </form>
+  </div>
+</body>
+</html>
